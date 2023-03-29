@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        function fullname(fn,ln) {
+            var a = fn + " " + ln;
+            return a;
+        }
+        var b = fullname("kaushik","dolui")
+        document.write(b);
+
+        function simple_interest(p,t,r) { // function definition
+            var si = p*t*r;
+            return si;
+        }
+
+        var p = prompt("Enter the principle amount");
+        var t = prompt("Enter the time period of intrest");
+        var r = prompt("Enter the rate of interest");
+        var si = simple_interest(p,t,r) // function call
+        alert("simple interest ="+si); // returning the value
+    </script>
+</body>
+</html>
